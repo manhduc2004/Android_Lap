@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp" />
+
+    <TableRow
+        android:id="@+id/table_row_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập tên:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/table_row_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/height_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chiều cao:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/height_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/table_row_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/weight_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cân nặng:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/weight_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnBMI"
+        android:text="Tính BMI"/>
+
+    <TableRow
+        android:id="@+id/table_row_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/BMI_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI = "
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/BMI_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/table_row_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/chuan_doan_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chuẩn đoán: "
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/chuan_doan_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+    </TableRow>
+</TableLayout>

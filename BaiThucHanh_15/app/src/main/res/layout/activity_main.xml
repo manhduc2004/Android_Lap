@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Thanh tiêu đề kiểu như hình -->
+    <TextView
+        android:id="@+id/hvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00BFA5"
+        android:gravity="center"
+        android:text="QUẢN LÝ SINH VIÊN"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <!-- Dòng: Mã lớp -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Mã lớp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtMaLop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nhập mã lớp"
+            android:inputType="textCapCharacters"/>
+    </LinearLayout>
+
+    <!-- Dòng: Tên lớp -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Tên lớp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtTenLop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nập tên lớp"/>
+    </LinearLayout>
+
+    <!-- Dòng: Sĩ số -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Sĩ số"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtSiSo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nhập sĩ số"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <!-- Hàng nút 1: INSERT - DELETE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:text="INSERT"/>
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:text="DELETE"/>
+    </LinearLayout>
+
+    <!-- Hàng nút 2: UPDATE - QUERY -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="6dp">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:text="UPDATE"/>
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnQuery"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:text="QUERY"/>
+    </LinearLayout>
+
+    <!-- Danh sách lớp -->
+    <ListView
+        android:id="@+id/lvLop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1" />
+</LinearLayout>
